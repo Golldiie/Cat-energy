@@ -130,9 +130,9 @@ export function createStack () {
     .pipe(dest(`${PATH_TO_DIST}icons`));
 }
 
-export function copyStatic () {
+export function copyStatic() {
   return src(PATHS_TO_STATIC, { base: PATH_TO_SOURCE })
-    .pipe(dest(PATH_TO_DIST));
+    .pipe(dest (PATH_TO_DIST)) ;
 }
 
 export function startServer () {
@@ -189,7 +189,6 @@ export function buildProd (done) {
       processStyles,
       processScripts,
       createStack,
-      copyStatic,
     ),
   )(done);
 }
