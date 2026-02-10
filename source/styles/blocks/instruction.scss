@@ -1,5 +1,56 @@
+.instruction__title {
+  margin: 0;
+}
+
+.instruction__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 230px);
+
+  @media (min-width: 768px) {
+    margin-top: 140px;
+    row-gap: 153px;
+  }
+}
+
 .instruction__item {
   list-style: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -80px;
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    background-color: $accent-color;
+
+    @media (min-width: 768px) {
+      top: -110px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      padding: 25px;
+    }
+  }
+}
+
+.instruction__item--health::before {
+  background: $accent-color url("../../icons/icon_leaf.svg") no-repeat center / 30px 32px;
+}
+
+.instruction__item--speed::before {
+  background: $accent-color url("../../icons/icon_powder.svg") no-repeat center / 30px 32px;
+}
+
+.instruction__item--eat::before {
+  background: $accent-color url("../../icons/icon_eat.svg") no-repeat center / 30px 32px;
+}
+
+.instruction__item--result::before {
+  background: $accent-color url("../../icons/icon_timer.svg") no-repeat center / 30px 32px;
 }
 
 .instruction__description {

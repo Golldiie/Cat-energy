@@ -13,7 +13,6 @@
   text-transform: uppercase;
 }
 
-
 .programs__button {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -21,11 +20,64 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $basic-green;
+  background-color: $accent-color;
   padding: 10px;
 }
 
 .programs__item {
   background-color: $basic-grey;
   list-style: none;
+  min-height: 374px;
+}
+
+.programs__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-image: url("../../icons/arrow.svg");
+  background-position: 100% 50%;
+  background-size: 32px 10px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.programs-item--slim {
+  background-image: url("../../icons/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+  background-size: 50px 53px;
+
+  @media (min-width: 768px) {
+    background-position: 81px 445px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: 41px 52px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs__item--pro {
+  background-image: url("../../icons/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+  background-size: 67px 50px;
+
+  @media (min-width: 768px) {
+    background-position: 91px 411px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: 47px 33px;
+    background-size: 134px 100px;
+  }
 }
