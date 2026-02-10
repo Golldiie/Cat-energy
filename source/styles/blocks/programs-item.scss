@@ -1,5 +1,6 @@
 .programs-item__title {
   font-family: "Oswald", sans-serif;
+  padding-left: 90px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -12,12 +13,36 @@
   color: $dark-grey;
 }
 
-.programs__link {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
+.programs-item--slim {
+  background-image: url("../../icons/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+  background-size: 50px 53px;
+
+  @media (min-width: 768px) {
+    background-position: 81px 445px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: 41px 52px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs-item--pro {
+  background-image: url("../../icons/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+  background-size: 67px 50px;
+
+  @media (min-width: 768px) {
+    background-position: 91px 411px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: 47px 33px;
+    background-size: 134px 100px;
+  }
 }
