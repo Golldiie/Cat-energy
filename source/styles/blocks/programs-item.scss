@@ -20,4 +20,23 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 10px;
+    margin-left: 15px;
+    background: url("icons/arrow.svg") no-repeat center;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+  }
+
+  &:is(:hover, :focus, :focus-visible)::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
