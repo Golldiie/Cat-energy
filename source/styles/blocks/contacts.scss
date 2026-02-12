@@ -6,7 +6,28 @@
   text-decoration: none;
 }
 
-.contacts__name {
+.contacts__list {
+  list-style: none;
+}
+
+.contacts__link {
   color: $dark-grey;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__icon {
+  color: #666666;
+}
+
+.contacts__link:hover .contacts__icon {
+  color: $accent-color;
+}
+
+.contacts__link:active .contacts__icon {
+  color: $accent-color;
+  opacity: 0.3;
 }
