@@ -11,3 +11,33 @@
   color: #000000;
   text-decoration: none;
 }
+
+.main-header__logo {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    min-height: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 59px;
+  }
+}
+
+.main-header__navigation {
+  display: flex;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+  }
+}
