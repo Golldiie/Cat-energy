@@ -1,0 +1,58 @@
+.slider__button {
+  display: block;
+  width: 4px;
+  height: 512px;
+  background-color: $special-darkgrey;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+  position: relative;
+
+  &:is(:hover, :focus, :focus-visible) {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    border: 2px solid $special-darkgrey;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: $special-darkgrey;
+    mask-image: url("../../icons/slider-arrow.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:is(:hover, :focus, :focus-visible)::before {
+    border-color: $accent-color;
+  }
+
+  &:is(:hover, :focus, :focus-visible)::after {
+    background-color: $accent-color;
+  }
+}

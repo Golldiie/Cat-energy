@@ -1,6 +1,23 @@
 .special {
-  background: no-repeat url("../../images/special-background@2x.jpg") center / 245px 288px;
   width: 245px;
   height: 288px;
   color: #ffffff;
+  box-sizing: border-box;
+
+  @media (min-resolution: 1dppx) and (max-resolution: 1.99dppx) {
+    background:
+      url("../../icons/icon_gift.svg") no-repeat center 56px/ 80px 83px,
+      url("../../images/special-background@1x.jpg") no-repeat center / 245px 288px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../../icons/icon_gift.svg") no-repeat center 56px/ 80px 83px,
+      url("../../images/special-background@2x.jpg") no-repeat center / 245px 288px;
+  }
+}
+
+.special__description {
+  text-align: center;
+  padding-top: 183px;
 }
