@@ -1,28 +1,59 @@
+.programs__header {
+  display: grid;
+  position: relative;
+  justify-content: center;
+}
+
+.programs__background {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 302px;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .programs__title {
+  width: 250px;
+  justify-self: center;
+  text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-weight: 400;
+  z-index: 3;
 }
 
 .programs__slogan {
+  text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  z-index: 3;
+}
+
+.programs__food {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 
 
 .programs__button {
+  grid-row: 4;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $accent-color;
   padding: 10px;
+  z-index: 3;
 }
 
 .programs__item {
