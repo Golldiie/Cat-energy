@@ -19,7 +19,7 @@
       <ul class="main-nav__list user-list">
         <a class="main-header__logo logo" href="index.html" alt="Переход на главную старницу">
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
             <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
             <img class="logo__pic" src="images/logo-mobile.svg" alt="" width="33" height="38">
           </picture>
@@ -61,7 +61,7 @@
         </div>
         <a class="programs__button button button--primary" href="form.html">Подобрать программу</a>
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
           <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
           <img class="programs__food" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Продукт Кэт Энерджи" width="280" height="270">
         </picture>
@@ -107,32 +107,44 @@
       </ol>
     </section>
     <section class="example">
-      <h2 class="example__title title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__list">
-        <div class="example__item">
-          <dt class="example__number">5 кг</dt>
-          <dd class="example__description">снижение веса</dd>
+      <div class="example__wrapper">
+        <h2 class="example__title title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__list-wrapper">
+          <dl class="example__list">
+            <div class="example__item example-item">
+              <div class="example-item__wrapper">
+                <dt class="example-item__number">5 кг</dt>
+                <dd class="example-item__description">снижение веса</dd>
+              </div>
+            </div>
+            <div class="example__item example-item">
+              <div class="example-item__wrapper">
+                <dt class="example-item__number">60 дней</dt>
+                <dd class="example-item__description">затрачено времени</dd>
+              </div>
+            </div>
+          </dl>
+          <div class="example__price">
+            <span class="example__price-title">Затраты на питание:</span>
+            <span class="example__price-number">15 000 РУБ.</span>
+          </div>
         </div>
-        <div class="example__item">
-          <dt class="example__number">60 дней</dt>
-          <dd class="example__description">затрачено</dd>
+        <div class="example__slider slider">
+          <picture>
+            <source media="(min-width: 768px)" height="512" width="560" type="image/png" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+            <img class="slider__pic-before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Кот Борис до диеты" width="280" height="256">
+          </picture>
+          <div class="slider__overlay">
+            <picture>
+              <source media="(min-width: 768px)" height="512" width="560" type="image/png" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <img class="slider__pic-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот Борис после диеты" width="280" height="256">
+            </picture>
+          </div>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Управление видом кота</span>
+          </button>
         </div>
-      </dl>
-      <span class="example__price-title">Затраты на питание:</span>
-      <span class="example__price-number">15 000 РУБ.</span>
-      <div class="example__slider slider">
-        <picture>
-          <source media="(min-width: 768px)" height="512" width="560" type="image/png" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-          <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Кот Борис до диеты" width="280" height="256">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" height="512" width="560" type="image/png" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-          <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот Борис после диеты" width="280" height="256">
-        </picture>
-        <button class="slider__button" type="button">
-          <span class="visually-hidden">Управление видом кота</span>
-        </button>
       </div>
     </section>
   </main>
@@ -144,7 +156,7 @@
         <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <picture>
-        <source media="(min-width: 1200px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" type="image/jpg" width="1200" height="400">
+        <source media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
         <source media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
         <img class="cooperation__location" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" alt="Местонахождение офиса Кэт Энерджи." width="320" height="362">
       </picture>

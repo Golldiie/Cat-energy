@@ -1,24 +1,83 @@
+.instruction {
+  width: 280px;
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    display: none;
+    border: 1px solid $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .instruction__title {
-  margin: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .instruction__list {
+  padding: 40px 0 49px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 230px);
+  grid-template-columns: repeat(auto-fit, 280px);
+  row-gap: 20px;
 
-  @media (min-width: 768px) {
-    margin-top: 140px;
-    row-gap: 153px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 32px 0 47px;
+    justify-content: space-between;
+    row-gap: 37px;
+    counter-reset: instruction;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0;
+    padding-top: 32px;
+    justify-content: space-between;
+    row-gap: 37px;
+    counter-reset: instruction;
   }
 }
 
 .instruction__item {
   list-style: none;
+  display: flex;
+  gap: 20px;
   position: relative;
+  counter-increment: instruction;
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
 
   &::before {
-    position: absolute;
-    left: -80px;
     content: " ";
     display: block;
     width: 60px;
@@ -27,13 +86,38 @@
     box-sizing: border-box;
     background-color: $accent-color;
 
-    @media (min-width: 768px) {
-      top: -110px;
-      left: 0;
+    @media (min-width: $tablet-width) {
+      grid-row: 1;
       width: 80px;
       height: 80px;
-      padding: 25px;
     }
+  }
+
+  &::after {
+    display: none;
+    content: counter(instruction);
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    right: 4px;
+    top: -40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: $basic-grey;
+    z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    min-height: 280px;
+    flex-direction: column;
+    gap: 31px;
   }
 }
 
@@ -54,7 +138,15 @@
 }
 
 .instruction__description {
+  margin: 0;
+  width: 200px;
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
