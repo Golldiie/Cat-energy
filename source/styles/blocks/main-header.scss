@@ -1,43 +1,46 @@
 .main-header {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
-.main-header a {
-  color: #000000;
-  text-decoration: none;
+.main-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 704px;
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
 }
 
 .main-header__logo {
-  min-height: 38px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 190px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    min-height: 50px;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 59px;
+    width: 202px;
   }
 }
 
-.main-header__navigation {
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    width: 704px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    width: 1220px;
-    margin: 0 auto;
-  }
-}
