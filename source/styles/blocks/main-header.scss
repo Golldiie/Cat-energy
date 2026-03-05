@@ -44,3 +44,23 @@
   }
 }
 
+.main-header__navigation-toggle {
+  padding: 0;
+  margin: 0;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__navigation-icon--close {
+  display: block;
+}
+
+.main-header__navigation-icon--burger {
+  display: none;
+}
+

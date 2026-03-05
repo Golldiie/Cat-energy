@@ -17,26 +17,6 @@
   }
 }
 
-.main-nav__toggle {
-  padding: 0;
-  margin: 0;
-  height: 24px;
-  border: none;
-  background-color: transparent;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-nav__icon--close {
-  display: block;
-}
-
-.main-nav__icon--burger {
-  display: none;
-}
-
 .main-nav__list {
   padding: 0;
   padding-top: 15px;

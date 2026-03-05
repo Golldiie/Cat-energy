@@ -1,4 +1,32 @@
-.sales {
+.sales__wrapper {
   margin: 0;
-  padding: 0;
+  padding: 40px 0;
+}
+
+.sales__title {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    flex-grow: 1;
+    background-color: $accent-color;
+  }
+}
+
+.sales__subscribe {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
 }

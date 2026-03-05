@@ -1,3 +1,8 @@
-.addition-products__item {
-  list-style-type: none;
+.addition-item__name {
+  margin: 0;
+}
+
+.addition-item__addition-description {
+  display: flex;
+  justify-content: space-between;
 }
