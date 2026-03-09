@@ -1,6 +1,39 @@
 .main-nav {
-  margin: 0;
+  display: none;
+}
+
+.main-nav--open {
+  width: 100%;
+  grid-row: 1;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 575px;
+  }
+}
+
+.main-nav__list {
   padding: 0;
+  padding-top: 15px;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: stretch;
+  }
 }
 
 .main-nav__toggle {

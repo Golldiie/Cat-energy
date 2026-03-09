@@ -1,3 +1,37 @@
-.products {
+.products__list {
   list-style: none;
+  margin: 0;
+  padding: 41px 0 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 45px;
+    margin: 170px auto 0;
+    width: 708px;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    justify-content: space-between;
+    row-gap: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 184px auto 0;
+    padding: 0 0 71px;
+    grid-template-columns: repeat(4, 245px);
+  }
 }
+
+.products__item {
+  width: 320px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 100%;
+    padding: 161px 0 40px;
+    background-color: $basic-grey;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+

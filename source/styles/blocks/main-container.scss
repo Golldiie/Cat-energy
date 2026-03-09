@@ -2,3 +2,22 @@
   margin: 0;
   padding: 0;
 }
+
+.main-container__title {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 27px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 40px;
+    border: none;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    width: 1220px;
+  }
+}

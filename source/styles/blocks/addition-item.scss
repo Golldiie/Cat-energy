@@ -1,3 +1,28 @@
-.addition-products__item {
-  list-style-type: none;
+.addition-item__name {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.addition-item__addition-description {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 231px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
+}
+
+.addition-item__button {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
