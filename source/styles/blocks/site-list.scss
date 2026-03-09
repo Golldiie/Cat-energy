@@ -20,6 +20,13 @@
   }
 }
 
+.site-list__item--inner-current {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
 .site-list__link {
   color: #000000;
   text-decoration: none;
@@ -31,4 +38,8 @@
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
+
+.site-list__link--inner {
+  color: #000000;
 }

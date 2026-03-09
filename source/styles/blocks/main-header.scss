@@ -28,6 +28,15 @@
   }
 }
 
+.main-header__wrapper--inner {
+  @media (min-width: $desktop-width) {
+    position: static;
+    padding-top: 55px;
+    width: 1220px;
+    transform: none;
+  }
+}
+
 .main-header__logo {
   display: flex;
   align-items: center;
